@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoredonda.png" type="image/x-icon">
+    <title>Paulo Tech - Cursos Gratuitos</title>
+    <style>
+        body {
+            background-color: #302f2f;
+            overflow-x: hidden;
+        }
+
+        .menu {
+            height: 40px;
+            width: 100%;
+            background-color: #202020;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+        }
+
+        .menu button {
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #414141;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            left: 550px;
+        }
+        .cursoEmVideo{
+            height: 300px;
+            width: 600px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.747);
+            position: absolute;
+            cursor: pointer;
+            top: 90px;
+            left: 10px;
+        }
+        .boson{
+            height: 300px;
+            width: 600px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.747);
+            position: absolute;
+            cursor: pointer;
+            top: 90px;
+            left: 700px;
+        }
+        .redes{
+            height: 300px;
+            width: 600px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.747);
+            position: absolute;
+            cursor: pointer;
+            top: 410px;
+            left: 700px;
+        }
+        .IntArt {
+            height: 300px;
+            width: 600px; /* Mudado para 100% para responsividade */
+            position: relative; /* Ajustado para relativo */
+            top: 340px; /* Para manter espaço para a barra lateral */
+            left: 3px;
+            overflow: hidden;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.747);
+        }
+
+        .IntArt img {
+            height: 100%; /* Mantém a altura do contêiner */
+            width: 100%; /* Mantém a largura do contêiner */
+            object-fit: cover; /* Para manter a proporção */
+            transition: filter 0.3s ease;
+        }
+
+        .IntArt:hover img {
+            filter: brightness(70%);
+        }
+        h3{
+            color: transparent;
+            position: absolute;
+            top: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button onclick="window.history.back()">Voltar</button>
+        <h1>Cursos Gratuitos</h1>
+    </div>
+    <h2>
+        <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists" target="_blank">
+            <img src="img/cursoemvideo.png" class="cursoEmVideo" alt="">
+        </a>
+        <a href="https://www.youtube.com/@bosontreinamentos/playlists" target="_blank">
+            <img src="img/boson.jpg" class="boson" alt="">
+        </a>
+        <a href="melhoresIas.html">
+            <img class="IntArt" src="img/cursos-IA.webp" alt="">
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLAp37wMSBouDdpuuYhZfEK9oH0qk0IANb">
+            <img src="img/redes.jpg" class="redes" alt="">
+        </a>
+    </h2>
+    <h3>ola</h3>
+</body>
+</html>
