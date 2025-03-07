@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoredonda.png" type="image/x-icon">
+    <title>Paulo Tech - Programação</title>
+    <style>
+        body {
+            background-color: #f5f2f2;
+            overflow-x: hidden;
+        }
+
+        .menu {
+            height: 40px;
+            width: 100%;
+            background-color: #202020;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+        }
+
+        .menu button {
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #414141;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            left: 550px;
+        }
+
+        h2, h3 {
+            color: rgb(0, 0, 0);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li a div {
+            cursor: pointer;
+            height: 50px;
+            width: 150px;
+            color: white;
+            background-color: #1b1b1b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        li a div:hover {
+            background-color: #202020;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            left: 160px;
+            top: 5px;
+            list-style: none;
+            padding: 0;
+            background-color: #1b1b1b;
+            border-radius: 5px;
+            border: 1px solid #050505;
+            height: 200px;
+            width: 950px;
+        }
+
+        .dropdown ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown li {
+            padding: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button onclick="window.history.back()">Voltar</button>
+        <h1>Programação</h1>
+    </div>
+    <h2>
+        Programação é a arte de escrever instruções para computadores para que eles possam realizar tarefas e executar
+        instruções específicas. Estas instruções são escritas em uma linguagem de programação específica, como o
+        JavaScript, Python, C ++, entre outros. Os programadores usam essas linguagens para criar aplicativos, sites,
+        jogos, softwares e muito mais. <br><br>
+        <h2>As 5 linguagens de programação mais utilizadas atualmente.</h2><br>
+
+        <ul>
+            <li onclick="toggleMenu(event, this)">
+                <a href="#">
+                    <div>JavaScript</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.
+                        </li>
+                    </ul>
+                </div>
+            </li>            
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>Python</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            O Python é uma linguagem de programação amplamente usada em aplicações da Web,
+                            desenvolvimento de software, ciência de dados e machine learning (ML). Os desenvolvedores
+                            usam o Python porque é eficiente e fácil de aprender e pode ser executada em muitas
+                            plataformas diferentes. O software Python pode ser baixado gratuitamente, integra-se bem a
+                            todos os tipos de sistema e agiliza o desenvolvimento
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>Java</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações móveis e software empresarial até aplicações de big data e tecnologias do servidor.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>C#</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            C# é a linguagem mais popular presente na plataforma .NET e está em constante evolução, é a principal linguagem de programação em .NET. Inclusive, ela surgiu com a primeira versão da plataforma, em 2002. Com C# é possível desenvolver aplicações de praticamente todos os tipos: desde aplicações embarcadas até aplicativos de área de trabalho, mobile e sistemas web.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>PHP</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            PHP é uma linguagem de programação voltada para a web e que tem conquistado cada vez mais adeptos. Fácil de utilizar, robusta e com melhorias constantes. PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Os Frameworks na Programação:</h3><br>
+        <ul>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>React</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            React é uma biblioteca JavaScript de código aberto usada para construir interfaces de usuário (UIs), principalmente para aplicações web. Aqui estão alguns pontos principais sobre o React: <br><br>
+                            Componentes, Virtual DOM, Unidirecional, JSX, Ecosistema, Popularidade e Desempenho.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>Angular</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>Angular é um framework de desenvolvimento web de código aberto, mantido pelo Google, utilizado para construir aplicações web dinâmicas e de página única (SPAs). Aqui estão os principais pontos sobre o Angular: <br><br>
+                            Componentes, TypeScript, Binding Bidirecional, Injeção de Dependência, Routing, CLI,Ecossistema e Performance</li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>Node.js</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            Node.js é uma plataforma de desenvolvimento baseada no motor V8 do Google Chrome que permite rodar JavaScript no servidor. É muito popular para criar APIs, backends e aplicações em tempo real devido à sua natureza assíncrona e orientada a eventos.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleMenu(event,this)">
+                <a href="#">
+                    <div>Vue.js</div>
+                </a>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            Vue.js é um framework JavaScript progressivo para a criação de interfaces de usuário. Ele é popular para o desenvolvimento de SPAs (Single Page Applications) e para tornar interativas partes de uma aplicação, oferecendo uma forma eficiente e organizada de gerenciar a interface do usuário. Vue.js é fácil de aprender e altamente flexível, podendo ser utilizado tanto em pequenos projetos quanto em grandes aplicações.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </h2>
+    <script>
+        function toggleMenu(event, selectedItem) {
+            // Previne o comportamento padrão do link
+            event.preventDefault();
+    
+            // Fecha todos os dropdowns antes de abrir o selecionado
+            document.querySelectorAll('.dropdown').forEach(menu => {
+                menu.style.display = 'none';
+            });
+    
+            // Alterna a visibilidade do dropdown selecionado
+            const dropdown = selectedItem.querySelector('.dropdown');
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+        // Fecha o dropdown ao clicar fora
+        document.addEventListener('click', (event) => {
+            const isDropdown = event.target.closest('.dropdown') || event.target.closest('li');
+            if (!isDropdown) {
+                document.querySelectorAll('.dropdown').forEach(menu => {
+                    menu.style.display = 'none';
+                });
+            }
+        });
+    </script>    
+</body>
+
+</html>
