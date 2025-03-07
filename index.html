@@ -220,29 +220,6 @@
             left: 0px;
             bottom: 20%;
         }
-
-        .presente{
-            position: absolute;
-            top: 0px;
-            left: 1290px;
-            cursor: pointer;
-        }
-
-        .tooltip2 {
-            visibility: hidden;
-            height: 100px;
-            width: 290px;
-            background-color: rgb(43, 43, 43);
-            border-radius: 5px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 75px;
-            left: 1080px;
-            bottom: 20%;
-        }
     </style>
 </head>
 
@@ -269,8 +246,6 @@
         <a href="cursos.html">
             <button class="Bt7">Cursos Gratuitos</button>
         </a>
-        <h1 class="presente" id="mensagem">🎁</h1>
-        <div class="tooltip2" id="tooltip2">Desejo a voce um feliz natal! 🎄🎁</div>
     </div>
     <div class="menu" id="menuToggle">
         <div class="menu-icon" id="icon">⫶☰</div>
@@ -331,21 +306,6 @@
         icon.addEventListener('mouseleave', () => {
             tooltip.style.visibility = 'hidden';
             tooltip.style.opacity = '0';
-        });
-    </script>
-    <script>
-
-        const mensagemNatal = document.getElementById('mensagem');
-        const tooltip2 = document.getElementById('tooltip2');
-
-        mensagem.addEventListener('mouseenter', () => {
-            tooltip2.style.visibility = 'visible';
-            tooltip2.style.opacity = '1';
-        });
-
-        mensagem.addEventListener('mouseleave', () => {
-            tooltip2.style.visibility = 'hidden';
-            tooltip2.style.opacity = '0';
         });
     </script>
     <script>
