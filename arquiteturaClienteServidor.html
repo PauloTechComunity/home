@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoredonda.png" type="image/x-icon">
+    <title>Paulo Tech - Arquitetura cliente-servidor</title>
+    <style>
+        body {
+            background-color: #f5f2f2;
+            overflow-x: hidden;
+        }
+
+        .menu {
+            height: 40px;
+            width: 100%;
+            background-color: #202020;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+        }
+
+        .menu button {
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #414141;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            left: 500px;
+        }
+        h2{
+            color: rgb(0, 0, 0);
+        }
+        h2-1{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button onclick="window.history.back()">Voltar</button>
+        <h1>Arquitetura cliente-servidor</h1>
+    </div>
+    <h2>
+        Um servidor é um recurso dentro de um sistema computacional, capaz de processar aplicações, armazenar dados e prestar serviços, enquanto o cliente é um computador que solicita esses serviços e recursos. Em uma infraestrutura de TI, ambos formam a arquitetura conhecida como “cliente-servidor”.<br>
+        Uma estrutura cliente-servidor é um modelo de arquitetura de rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.<br>
+        A comunicação cliente-servidor é baseada em troca de mensagens, onde o cliente envia requisições e o servidor responde com as informações requisitadas.<br>
+        Este tipo de modelo é amplamente utilizado em rede de computadores, onde vários dispositivos podem se conectar a um servidor central para acessar recursos compartilhados, como arquivos, impressoras, bancos de dados, aplicativos e serviços de internet.<br>
+        A arquitetura cliente-servidor pode ser implementada de diferentes maneiras, como em aplicações web, jogos online, sistemas de gerenciamento de bancos de dados, entre outros.<br><br>
+        <hr>
+        Quais são os principais componentes de uma estrutura client-server?<br>
+        Os principais componentes de uma estrutura cliente-servidor são:<br><br>
+
+        <h2-1>Cliente:</h2-1>
+        Em uma infraestrutura cliente-servidor, cliente é um dispositivo de computação, como desktops, laptops, smartphones, tablets ou aplicativos que, através de protocolos de rede se conectam a servidores para fazer uma solicitação de serviço ou recurso e aguarda a resposta.<br><br>
+
+        <h2-1>Servidor:</h2-1> 
+        Já o servidor é o componente do sistema que fornece os serviços ou recursos solicitados pelos clientes. Estes servidores podem ser um computador projetado especificamente para gerenciar e fornecer serviços aos clientes, ou ainda, um software que é executado em um servidor de rede.<br><br>
+
+        <h2-1>Rede:</h2-1> 
+        A rede é a infraestrutura que conecta os clientes ao servidor. Ela pode ser local, como uma rede de área local (LAN), ou global, como a internet.<br><br>
+
+        <h2-1>Protocolos de comunicação:</h2-1> 
+        Os protocolos de comunicação trata-se de um conjunto de regras e procedimentos que regem a comunicação entre o cliente e o servidor. Entre os protocolos mais comuns estão o HTTP (Hypertext Transfer Protocol) usado na web, o SMTP (Simple Mail Transfer Protocol) usado no e-mail e o FTP (File Transfer Protocol) usado para transferir arquivos.<br><br>
+
+        <h2-1>Banco de dados:</h2-1> 
+        O banco de dados é um componente opcional em uma estrutura cliente-server e pode ser usado pelo servidor para armazenar e gerenciar dados usados pelos clientes. Estes dados, podem incluir informações do usuário, de aplicativos ou informações críticas de negócios.<br><br>
+
+        <h2-1>Interface de programação de aplicativos (API):</h2-1>
+        Trata-se de uma camada de software que permite que os aplicativos se comuniquem com o servidor e acessem seus serviços ou recursos. As APIs podem ser usadas para desenvolver aplicativos personalizados que se integram facilmente com o servidor.<br><br>
+        <hr>
+        Quais são as características de uma estrutura do tipo client-server?<br><br>
+        <h2-1>Distribuição de tarefas:</h2-1> A estrutura cliente-servidor permite que as tarefas sejam distribuídas entre o cliente, que solicita os serviços e recursos, e o servidor, que gerencia e fornece esses serviços e recursos. <br><br>
+        <h2-1>Comunicação baseada em mensagens</h2-1>: A comunicação entre o cliente e o servidor é baseada em trocas de mensagens, em que o cliente envia uma solicitação e o servidor retorna com uma resposta. Essa comunicação pode ser do tipo síncrona ou assíncrona. A comunicação síncrona ocorre quando o cliente aguarda a resposta do servidor antes de continuar a executar outras ações. Já a comunicação assíncrona permite que o cliente continue executando outras tarefas enquanto aguarda a resposta do servidor. <br><br>
+        <h2-1>Escalabilidade:</h2-1>
+        Uma estrutura cliente-servidor é escalável, o que significa que é possível adicionar mais clientes ou servidores para atender a um número maior de solicitações ou para lidar com cargas de trabalho mais pesadas. <br><br>
+        <h2-1>Centralização:</h2-1> Essa estrutura pode ser centralizada, o que significa que o servidor é responsável por gerenciar os recursos compartilhados. Isso pode permitir uma maior eficiência e segurança no gerenciamento de recursos.<br><br>
+
+        <h2-1>Confiabilidade:</h2-1> A estrutura client-server é geralmente mais confiável do que outras estruturas, pois o servidor é capaz de monitorar e gerenciar as solicitações de clientes para garantir que todas as solicitações sejam atendidas.<br><br>
+
+        <h2-1>Reutilização:</h2-1> Com esta estrutura, é possível reutilizar o código em diferentes aplicativos e serviços, o que pode aumentar a eficiência no desenvolvimento de software.<br><br>
+
+        <h2-1>Controle de acesso:</h2-1> A estrutura cliente-servidor pode incluir recursos para controle de acesso, permitindo que o servidor gerencie o acesso a recursos específicos para diferentes usuários ou grupos de usuários.<br><br>
+    </h2>
+</body>
+
+</html>
